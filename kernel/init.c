@@ -10,7 +10,7 @@ void init_all()
     idt_init();      // 初始化中断
     mem_init();      // 初始化内存管理系统
     thread_init();   // 初始化线程相关结构
-	list_remove(&init_pcb->general_tag);
+    list_remove(&init_pcb->general_tag);
     timer_init();    // 初始化PIT
     console_init();  // 控制台初始化最好放在开中断之前
     keyboard_init(); // 键盘初始化
