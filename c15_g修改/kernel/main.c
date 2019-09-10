@@ -16,8 +16,6 @@
 #include "ide.h"
 #include "stdio-kernel.h"
 
-void init(void);
-
 int main(void)
 {
    put_str("I am kernel\n");
